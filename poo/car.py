@@ -10,22 +10,24 @@ class Car:
         self.qtd_fuel = qtd_fuel
         self.is_on = is_on
 
-    #abastercer
-    def tofuel(self):
+    # abastercer
+    def to_fuel(self):
         self.qtd_fuel += 20
 
-    #ligar
-    def  turnon(self):
+    # ligar
+    def turn_on(self):
         if self.is_on:
-            print('the car is on!')
+            print('the car is already on!!!')
         else:
             self.is_on = True
+            print('the car is on!')
 
-    def turnoff(self):
+    def turn_off(self):
         if not self.is_on:
-            print('the car is off')
+            print('the car is already off!!')
         else:
             self.is_on = False
+            print('the car is off')
 
     def verify_batery(self):
         pass
