@@ -2,17 +2,18 @@
 
 class Car:
 
-    def __init__(self, color, qtd_doors, type_fuel, power, qtd_fuel, is_on):
+    def __init__(self, color, qtd_doors, type_fuel, power, qtd_fuel, is_on, velocity):
         self.color = color
         self.qtd_doors = qtd_doors
         self.type_fuel = type_fuel
         self.power = power
         self.qtd_fuel = qtd_fuel
         self.is_on = is_on
+        self.velocity = velocity
 
     # abastercer
-    def to_fuel(self):
-        self.qtd_fuel += 20
+    def to_fuel(self, qtd_fuel):
+        self.qtd_fuel += qtd_fuel
 
     # ligar
     def turn_on(self):
@@ -28,6 +29,12 @@ class Car:
         else:
             self.is_on = False
             print('the car is off')
+
+    def speed_up(self, velocity=10):
+        if self.is_on:
+            self.velocity += velocity
+        else:
+            print('to speed up the car needs to be on!!')
 
     def verify_batery(self):
         pass
