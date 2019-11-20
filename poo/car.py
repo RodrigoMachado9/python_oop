@@ -3,14 +3,17 @@ class Car:
         this class car , class used to instantiate new objects.
     """
 
-    def __init__(self, color, qtd_doors, type_fuel, power, qtd_fuel, is_on, velocity):
+    def __init__(self, color, qtd_doors, type_fuel, power):
         self.color = color
         self.qtd_doors = qtd_doors
         self.type_fuel = type_fuel
         self.power = power
-        self.qtd_fuel = qtd_fuel
-        self.is_on = is_on
-        self.velocity = velocity
+        self.qtd_fuel = 0
+        self.is_on = False
+        self.velocity = 0
+
+    def __del__(self):
+        print('object has been removed from memory!')
 
     # abastercer
     def to_fuel(self, qtd_fuel):

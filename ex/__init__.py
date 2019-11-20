@@ -1,3 +1,4 @@
+"""
 class Pessoa:
 
     def __init__(self):
@@ -13,3 +14,12 @@ if __name__ == "__main__":
 
     print(f"Nome: {p.nome} - Idade: {p.idade}")
 
+"""
+
+class Klass:
+    def __del__(self):
+        print('Finalizando execução')
+
+if __name__ == "__main__":
+    c = Klass()
+    del c
