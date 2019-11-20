@@ -8,8 +8,8 @@ class Pessoa:
 if __name__ == "__main__":
     p = Pessoa()
 
-    p.nome = input("digite o seu nome: ")
-    p.idade = input("digite a sua idade: ")
+    p.nome = input("type your name: ")
+    p.idade = input("type your age: ")
 
     print(f"Nome: {p.nome} - Idade: {p.idade}")
 
