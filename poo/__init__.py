@@ -18,3 +18,5 @@ if __name__ == '__main__':
     print("uno-black: the amount of fuel is: %s" % uno_black.qtd_fuel)
     uno_black.speed_up(10)
     print(uno_black.velocity)
+    print('\n')
+    help(uno_black.to_fuel) # native function help,  is responsible to show doctring and method name!

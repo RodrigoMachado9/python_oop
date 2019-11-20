@@ -1,6 +1,7 @@
-
-
 class Car:
+    """
+        this class car , class used to instantiate new objects.
+    """
 
     def __init__(self, color, qtd_doors, type_fuel, power, qtd_fuel, is_on, velocity):
         self.color = color
@@ -13,6 +14,10 @@ class Car:
 
     # abastercer
     def to_fuel(self, qtd_fuel):
+        """
+        :param qtd_fuel: responsible for increasing a certain amount of fuel
+        :return:
+        """
         self.qtd_fuel += qtd_fuel
 
     # ligar
