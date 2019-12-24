@@ -7,7 +7,5 @@ class Tricycle(motorcycle.Motorcycle):
     def __init__(self, *args):
         super(Tricycle, self).__init__(*args)
 
-
-
 instante_tricycle = Tricycle(2,'GREEN', 'GASOLINE', '500').velocity = 2
 print(instante_tricycle)
