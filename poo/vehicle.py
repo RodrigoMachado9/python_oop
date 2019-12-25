@@ -1,7 +1,7 @@
-from abc import abstractclassmethod, ABC
+# from abc import abstractclassmethod, ABC
+from poo.interface import Interface
 
-
-class Vehicle(ABC):
+class Vehicle(Interface):
     """
         this class vehicle , class used to inheritance between child classes.
     """
@@ -47,7 +47,6 @@ class Vehicle(ABC):
         else:
             print('to speed up the vehicle needs to be on!!')
 
-    @abstractclassmethod
     def to_paint(self, color: str):             # encapsulamento....
         self.__color = color
         print("The vehicle is color: %s" % color)
