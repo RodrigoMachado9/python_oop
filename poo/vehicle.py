@@ -7,7 +7,7 @@ class Vehicle:
         self.__color = color
         self.__type_fuel = type_fuel
         self.__power = power
-        self.__qtd_fuel: int = 0
+        self._qtd_fuel: int = 0     # atributo protegido
         self.__is_on: bool = False
         self.__velocity: int = 0
         self._libras = 0        # diferente do atributo com 2 (underscore - private), 1 significa protected, logo somente as classes filhas poderão ter acesso.
@@ -21,7 +21,7 @@ class Vehicle:
         :param qtd_fuel: responsible for increasing a certain amount of fuel
         :return:
         """
-        self.__qtd_fuel += qtd_fuel
+        self._qtd_fuel += qtd_fuel
 
     # ligar
     def turn_on(self):
@@ -43,6 +43,12 @@ class Vehicle:
             self.__velocity += velocity
         else:
             print('to speed up the vehicle needs to be on!!')
+
+
+    def to_paint(self, color: str):             # encapsulamento....
+        self.__color = color
+        print("The vehicle is color: %s" % color)
+
 
     def verify_batery(self):
         pass

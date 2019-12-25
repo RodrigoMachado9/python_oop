@@ -10,4 +10,4 @@ class Motorcycle(Vehicle):
         print('the method was called from the motorcycle class ')
         if qtd_fuel >= 30:
             print('the motorcycle fuel tank is full')
-        self.qtd_fuel += qtd_fuel
+        self._qtd_fuel += qtd_fuel

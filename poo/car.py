@@ -9,4 +9,4 @@ class Car(Vehicle):
 
     def to_fuel(self, qtd_fuel: int ):
         print('the method was called from the car class')
-        self.qtd_fuel += qtd_fuel
+        self._qtd_fuel += qtd_fuel
