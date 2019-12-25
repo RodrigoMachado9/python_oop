@@ -18,6 +18,8 @@ if __name__ == '__main__':
     print('\nplaying with polymorphism > by car ')
     uno_purple = Car(4, 'purple', 'flex', 2.0)
     uno_purple.to_fuel(2)
+    uno_purple.to_paint("blue")
+    print(uno_purple.color)
     # print(uno_purple.qtd_fuel)
 
     # uno_black = Car(2, 'black', 'gasoline', 1.4)

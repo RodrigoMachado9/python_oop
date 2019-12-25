@@ -44,11 +44,17 @@ class Vehicle:
         else:
             print('to speed up the vehicle needs to be on!!')
 
-
     def to_paint(self, color: str):             # encapsulamento....
         self.__color = color
         print("The vehicle is color: %s" % color)
 
+    @property
+    def color(self):
+        return self.__color
+
+    # @color.setter
+    # def color(self, color):
+    #     self.__color = color
 
     def verify_batery(self):
         pass
