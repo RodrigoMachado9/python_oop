@@ -1,3 +1,6 @@
+from abc import abstractclassmethod
+
+
 class Vehicle:
     """
         this class vehicle , class used to inheritance between child classes.
@@ -44,6 +47,7 @@ class Vehicle:
         else:
             print('to speed up the vehicle needs to be on!!')
 
+    @abstractclassmethod
     def to_paint(self, color: str):             # encapsulamento....
         self.__color = color
         print("The vehicle is color: %s" % color)
@@ -52,9 +56,9 @@ class Vehicle:
     def color(self):
         return self.__color
 
-    # @color.setter
-    # def color(self, color):
-    #     self.__color = color
+    @color.setter
+    def color(self, color):
+        self.__color = color
 
     def verify_batery(self):
         pass
