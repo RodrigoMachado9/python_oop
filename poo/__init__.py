@@ -1,5 +1,7 @@
 from poo.car import Car
 from poo.motorcycle import Motorcycle
+from poo.people import People
+from poo.vehicle import Vehicle
 
 if __name__ == '__main__':
     print('\n')
@@ -20,6 +22,11 @@ if __name__ == '__main__':
     uno_purple.to_fuel(2)
     uno_purple.to_paint("blue")
     print(uno_purple.color)
+    people_machado = People('Machado')
+
+    if isinstance(people_machado, Vehicle):
+        print('The class a vehicle')
+    print('the class not is a vehicle')
     # print(uno_purple.qtd_fuel)
 
     # uno_black = Car(2, 'black', 'gasoline', 1.4)
