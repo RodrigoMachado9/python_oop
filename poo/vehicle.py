@@ -10,6 +10,7 @@ class Vehicle:
         self.__qtd_fuel: int = 0
         self.__is_on: bool = False
         self.__velocity: int = 0
+        self._libras = 0        # diferente do atributo com 2 (underscore - private), 1 significa protected, logo somente as classes filhas poderão ter acesso.
 
     def __del__(self):
         print('object has been removed from memory!')

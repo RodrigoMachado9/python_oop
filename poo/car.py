@@ -4,6 +4,7 @@ class Car(Vehicle):
     def __init__(self, qtd_doors: int, *args):
         super(Car, self).__init__(*args)
         self.qtd_doors = qtd_doors
+        self._libras = 30 # atributo protegigio pode ser acessado apenas pelas classes filhas..
 
 
     def to_fuel(self, qtd_fuel: int ):
