@@ -1,7 +1,7 @@
-from abc import abstractclassmethod
+from abc import abstractclassmethod, ABC
 
 
-class Vehicle:
+class Vehicle(ABC):
     """
         this class vehicle , class used to inheritance between child classes.
     """

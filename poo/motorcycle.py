@@ -11,3 +11,8 @@ class Motorcycle(Vehicle):
         if qtd_fuel >= 30:
             print('the motorcycle fuel tank is full')
         self._qtd_fuel += qtd_fuel
+
+    def to_paint(self, color: str):
+        if color == "blue":
+            print("the motorcycle can't be blue")
+        self.color = color
